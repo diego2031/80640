@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica06</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        form {
+            box-shadow: 20px 10px 20px;
+            width: 300px;
+            margin: 0 auto; /*para centrar*/
+            border: 1px solid lightgray;
+            padding: 15px;
+            border-radius: 5px;
+         }
+        label{
+            display: block;
+            
+        }
+        input{
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 5px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+        input[type = "submit"]{
+            background-color: blue;
+            color: white;
+            margin-top: 10px;
+        }
+        h1{
+            text-align: center;
+        }    
+    </style>
+</head>
+<body>
+    <h1>Inicio de sesión</h1>
+    <form action="" method="post" id="formulario">
+        <label for="user">nombre de usuario:</label>
+        <input type="text" id="user" name="user">
+        <label for="password">contraseña:</label>
+        <input type="password" id="password" name="password">
+        <input type="submit"value="Iniciar sesión" id="login"> 
+    </form>
+    <script>
+        const formulario= document.getElementById("formulario");
+        formulario.addEventListener("click", evento =>{
+            evento.preventDefault()
+            int u = document.getElementById("user").value
+            int p = document.getElementById("password").value
+            alert(u+p)
+        })
+        
+        
+    </script>
+    </body>
+</html>
