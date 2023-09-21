@@ -41,19 +41,19 @@
 </head>
 <body>
     <h1>Inicio de sesión</h1>
-    <form action="" method="post" id="formulario">
+    <form action="" method="" id="formulario">
         <label for="user">nombre de usuario:</label>
         <input type="text" id="user" name="user">
         <label for="password">contraseña:</label>
         <input type="password" id="password" name="password">
-        <input type="submit"value="Iniciar sesión" id="login"> 
+        <input type="submit"value="Iniciar sesión" id="envio"> 
     </form>
     <script>
-        const formulario= document.getElementById("formulario");
+        const formulario= document.getElementById("envio");
         formulario.addEventListener("click", evento =>{
             evento.preventDefault()
-            int u = document.getElementById("user").value
-            int p = document.getElementById("password").value
+            let u =document.getElementById("user").value
+            let p = document.getElementById("password").value
             alert(u+p)
         })
         
