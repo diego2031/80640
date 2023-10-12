@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica05</title>
+    <style>
+        img {
+            box-shadow: 5px 5px 20px brown;
+            border-radius: 10% 40% 30%;
+        }
+        figure{
+            text-align: center;
+            width: 300px;
+            display: inline-block;
+        }
+        img.redonda{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+   <h1>Random Picture</h1> 
+   <div id="app"></div>
+   <figure>
+        <img src="https://picsum.photos/id/1/200/200" alt="">
+        <figcaption>John</figcaption>
+    </figure>
+   <figure>
+       <img src="https://picsum.photos/id/2/200/200" alt="">
+        <figcaption>
+            Jane
+        </figcaption>
+   </figure>
+
+   <script>
+        const app = document.getElementById("app")
+        const url = "https://picsum.photos/id/"
+        const size = "/200/200"
+        const Picture = (parametros, nombre) => {
+            let src = url + parametros.id + size
+            //console.log(src)
+            return `
+                <figure>
+                    <img src="${src}">
+                    <figcaption>
+                        ${parametros.nombre}
+                    </figcaption>
+                </figure>
+            `
+        }
+
+        app.innerHTML = Picture({id:"10",nombre:"John"})
+        app.innerHTML += Picture({id:"12",nombre:"Jane"})
+        app.innerHTML += Picture({id:"13",nombre:"Joane"})
+        
+        const lista = document.querySelectorAll("img")
+
+        for (let i = 0; i < lista.length; i++) {
+            const element = lista[i];
+            lista[i].addEventListener("click", () => {
+                // lista[i].style.borderRadius = "50%"
+                lista[i].classList.toggle("redonda")
+            });
+        }
+
+   </script>
+</body>
+</html>

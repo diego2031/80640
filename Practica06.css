@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+form {
+    box-shadow: 20px 10px 20px;
+    width: 300px;
+    margin: 0 auto; /*para centrar*/
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 5px;
+ }
+label{
+    display: block;
+    
+}
+input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+input[type = "submit"]{
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+}
+h1{
+    text-align: center;
+}    

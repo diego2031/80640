@@ -4,40 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica06</title>
-    <style>
-        *{
-            box-sizing: border-box;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-        }
-        form {
-            box-shadow: 20px 10px 20px;
-            width: 300px;
-            margin: 0 auto; /*para centrar*/
-            border: 1px solid lightgray;
-            padding: 15px;
-            border-radius: 5px;
-         }
-        label{
-            display: block;
-            
-        }
-        input{
-            margin-bottom: 15px;
-            width: 100%;
-            padding: 5px;
-            border: 1px solid lightgray;
-            border-radius: 5px;
-        }
-        input[type = "submit"]{
-            background-color: blue;
-            color: white;
-            margin-top: 10px;
-        }
-        h1{
-            text-align: center;
-        }    
-    </style>
+    <link rel="stylesheet" href="Practica06.css">
 </head>
 <body>
     <h1>Inicio de sesión</h1>
@@ -47,17 +14,8 @@
         <label for="password">contraseña:</label>
         <input type="password" id="password" name="password">
         <input type="submit"value="Iniciar sesión" id="envio"> 
-    </form>
-    <script>
-        const formulario= document.getElementById("envio");
-        formulario.addEventListener("click", evento =>{
-            evento.preventDefault()
-            let u =document.getElementById("user").value
-            let p = document.getElementById("password").value
-            alert(u+p)
-        })
-        
-        
-    </script>
+    </form> 
+    <script src= "Practica06.js"></script>
+
     </body>
 </html>

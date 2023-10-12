@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+form {
+    box-shadow: 20px 10px 20px;
+    width: 400px;
+    
+    margin: 0 auto; /*para centrar*/
+    
+    padding: 15px;
+    border-radius: 5px;
+ }
+ fieldset {
+  border: 1px solid lightgray;
+  margin-bottom: 30px;
+}
+
+legend {
+  
+  color: black;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
+label{
+    display: block;
+    
+}
+input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+input[type = "submit"]{
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+}
+h1{
+    text-align: center;
+}    
