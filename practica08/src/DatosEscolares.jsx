@@ -11,8 +11,8 @@ function DatosEscolares() {
            <label htmlFor="matricula">Matricula:</label>
            <input type="text" id="matricula"/>
            </fieldset>
-            </>
-        )
+        </>
+    )
     
 }
 
